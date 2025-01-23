@@ -1,0 +1,18 @@
+version: "3.4"
+
+services:
+  app:
+    container_name: gcm_thehivehook_go_package
+    environment:
+      - GO_HIVEHOOK_THAPIKEY=ERHs96mbKEcx0nq8w/Xa+sjnk50ZmoSk
+      - GO_HIVEHOOK_DBWLOGPASSWD=i2J-QYv-jmL-CFs
+    image: gitlab.cloud.gcm:5050/a.belyakov/thehivehook_go_package:latest
+    restart: unless-stopped
+    volumes:
+      - $PWD/logs:/opt/thehivehook_go_package/logs:rw
+      - $PWD/config:/opt/thehivehook_go_package/config:rw
+      #для корректного отображения даты с учетом временной зоны
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    port:
+      - "5000:5000"
