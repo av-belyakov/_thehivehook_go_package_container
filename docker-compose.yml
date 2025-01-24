@@ -15,12 +15,12 @@ services:
       #для корректного отображения даты с учетом временной зоны
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
-    networks:
-      - hivehook
+#    networks:
+#      - hivehook
     ports:
-      - "15151:5151"
+      - "127.0.0.1:15151:5151"
 
-networks:
-  hivehook:
-    external: true
+#networks:
+#  hivehook:
+#    external: true
 
