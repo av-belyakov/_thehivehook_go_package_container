@@ -10,9 +10,9 @@ services:
     restart: unless-stopped
     volumes:
       - $PWD/logs:/opt/thehivehook_go_package/logs:rw
-      - $PWD/config:/opt/thehivehook_go_package/config:rw
+      #- $PWD/config:/opt/thehivehook_go_package/config:rw
       #для корректного отображения даты с учетом временной зоны
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
-    port:
+    ports:
       - "5000:5000"
