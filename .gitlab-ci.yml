@@ -12,4 +12,5 @@ build-job:
       - master
       - latest
   script: 
+    - pwd
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml up -d --force-recreate --build
