@@ -17,11 +17,10 @@ services:
       - /etc/localtime:/etc/localtime:ro
     #network_mode: host
     networks:
-      - hivehook-net
+      hivehook-net:
     ports:
       - "15151:5151"
 
 networks:
   hivehook-net:
     external: true
-    name: hivehook-net
