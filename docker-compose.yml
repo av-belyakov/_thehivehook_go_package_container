@@ -9,8 +9,8 @@ services:
     image: gitlab.cloud.gcm:5050/a.belyakov/thehivehook_go_package:latest
     restart: unless-stopped
     volumes:
-      - $PWD/logs:/var/log:rw
       #- $PWD/logs:/opt/thehivehook_go_package/logs:rw
+      - /var/log:/opt/thehivehook_go_package/logs:rw
       - $PWD/config:/opt/thehivehook_go_package/config:rw
       #для корректного отображения даты с учетом временной зоны
       - /etc/timezone:/etc/timezone:ro
