@@ -18,7 +18,7 @@ services:
 #    networks:
 #      - hivehook
     ports:
-      - "127.0.0.1:15151:5151"
+      - "192.168.9.205:15151:5151"
 
 #networks:
 #  hivehook:
