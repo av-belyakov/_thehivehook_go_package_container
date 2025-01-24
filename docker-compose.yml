@@ -18,7 +18,7 @@ services:
     #network_mode: host
     networks:
       hivehook-net:
-        ipv4-address: 0.0.0.0
+        ipv4_address: 0.0.0.0
     ports:
       - "15151:5151"
 
