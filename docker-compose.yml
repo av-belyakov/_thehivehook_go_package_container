@@ -19,5 +19,5 @@ services:
       - "15151:5151"
 
 networks:
-  app:
-    driver: host
+  host:
+    external: true
