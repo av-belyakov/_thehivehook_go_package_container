@@ -15,14 +15,11 @@ services:
       #для корректного отображения даты с учетом временной зоны
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
-    #network_mode: host
-    networks:
-      hivehook-net:
-        ipv4_address: 0.0.0.0
+    network_mode: host
     ports:
       - "15151:5151"
 
 networks:
   hivehook-net:
-    driver: host
-    external: true
+    driver: bridge
+
