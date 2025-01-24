@@ -17,3 +17,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "15151:5151"
+
+networks:
+  app:
+    driver: host
