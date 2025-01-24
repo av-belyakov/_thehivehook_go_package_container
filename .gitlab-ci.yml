@@ -2,3 +2,15 @@ stages:
   - build
   - push
 
+default:
+  tags:
+    - thehivehook_go
+
+build-job:
+  stage: build
+  only:
+    refs:
+      - master
+      - latest
+  script: 
+    - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml up -d --force-recreate --build
