@@ -7,11 +7,11 @@ default:
 
 build-job:
   stage: build
-  rules:
-    - if: 
-      refs:
-      - master
-      - latest        
+#  rules:
+#    - if: 
+#      refs:
+#      - master
+#      - latest        
 #  only:
 #    refs:
 #      - master
