@@ -11,8 +11,8 @@ build-job:
     refs:
       - master
       - latest
-  before-script:
-    - echo 'URL repository: ${CI_REPOSITORY_URL}'
+  before_script:
+    - echo "URL repository: ${CI_REPOSITORY_URL}"
   script: 
     - pwd
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
