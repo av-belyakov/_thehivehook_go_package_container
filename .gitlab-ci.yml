@@ -3,9 +3,7 @@ stages:
 
 default:
   tags:
-    - thehivehook_go
-#  before_script:
-#    - echo "URL repository: ${CI_REPOSITORY_URL}"  
+    - thehivehook_go  
 
 build-job:
   stage: build
@@ -13,10 +11,10 @@ build-job:
     refs:
       - master
       - latest
-  before_script:
-    - echo "Execute this `before_script` in all jobs by default."
+    before_script:
+    - echo `URL repository: $CI_REPOSITORY_URL`
   script: 
     - pwd
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
-    - docker rmi ${CI_REPOSITORY_URL}
+    - docker rmi $CI_REPOSITORY_URL
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml up -d --force-recreate --build
