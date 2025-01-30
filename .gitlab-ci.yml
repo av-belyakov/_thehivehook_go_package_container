@@ -16,5 +16,5 @@ build-job:
   script: 
     - pwd
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
-#    - docker rmi gitlab.cloud.gcm:5050/a.belyakov/thehivehook_go_package
+    - docker rmi gitlab.cloud.gcm:5050/a.belyakov/thehivehook_go_package
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml up -d --force-recreate --build
