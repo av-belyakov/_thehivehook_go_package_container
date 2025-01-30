@@ -1,18 +1,156 @@
-2023-09-30T18:04:17.729+0300	debug	/opt/tfs-agent/_work/1/s/agent/impl/processor.go:224	sending health check to	{"request url": "https://mykumatest.cloud.gcm:7210"}
-2023-09-30T18:04:27.843+0300	debug	connector 'Windows WMI Connector'	/opt/tfs-agent/_work/1/s/sdk/connectors/base.go:81	<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>5379</EventID><Version>0</Version><Level>0</Level><Task>13824</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated SystemTime='2023-09-30T15:04:25.8709038Z'/><EventRecordID>101553</EventRecordID><Correlation ActivityID='{9720f9d0-e529-0000-68fa-209729e5d901}'/><Execution ProcessID='652' ThreadID='524'/><Channel>Security</Channel><Computer>DESKTOP-MG37RGH</Computer><Security/></System><EventData><Data Name='SubjectUserSid'>S-1-5-18</Data><Data Name='SubjectUserName'>DESKTOP-MG37RGH$</Data><Data Name='SubjectDomainName'>WORKGROUP</Data><Data Name='SubjectLogonId'>0x3e7</Data><Data Name='TargetName'>WindowsLive:(token):name=02gqfhtszsjjbgkm;serviceuri=*</Data><Data Name='Type'>0</Data><Data Name='CountOfCredentialsReturned'>0</Data><Data Name='ReadOperation'>%%8100</Data><Data Name='ReturnCode'>3221226021</Data><Data Name='ProcessCreationTime'>2023-09-12T03:31:26.2962325Z</Data><Data Name='ClientProcessId'>380</Data></EventData></Event>
-2023-09-30T18:04:27.843+0300	debug	connector 'Windows WMI Connector'	/opt/tfs-agent/_work/1/s/sdk/connectors/base.go:81	<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>5379</EventID><Version>0</Version><Level>0</Level><Task>13824</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated SystemTime='2023-09-30T15:04:25.8712972Z'/><EventRecordID>101554</EventRecordID><Correlation ActivityID='{9720f9d0-e529-0000-68fa-209729e5d901}'/><Execution ProcessID='652' ThreadID='524'/><Channel>Security</Channel><Computer>DESKTOP-MG37RGH</Computer><Security/></System><EventData><Data Name='SubjectUserSid'>S-1-5-18</Data><Data Name='SubjectUserName'>DESKTOP-MG37RGH$</Data><Data Name='SubjectDomainName'>WORKGROUP</Data><Data Name='SubjectLogonId'>0x3e7</Data><Data Name='TargetName'>WindowsLive:(cert):name=02gqfhtszsjjbgkm;serviceuri=*</Data><Data Name='Type'>0</Data><Data Name='CountOfCredentialsReturned'>0</Data><Data Name='ReadOperation'>%%8100</Data><Data Name='ReturnCode'>3221226021</Data><Data Name='ProcessCreationTime'>2023-09-12T03:31:26.2962325Z</Data><Data Name='ClientProcessId'>380</Data></EventData></Event>
-2023-09-30T18:04:27.843+0300	debug	connector 'Windows WMI Connector'	/opt/tfs-agent/_work/1/s/sdk/connectors/base.go:81	<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>5379</EventID><Version>0</Version><Level>0</Level><Task>13824</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated SystemTime='2023-09-30T15:04:25.8714811Z'/><EventRecordID>101555</EventRecordID><Correlation ActivityID='{9720f9d0-e529-0000-68fa-209729e5d901}'/><Execution ProcessID='652' ThreadID='524'/><Channel>Security</Channel><Computer>DESKTOP-MG37RGH</Computer><Security/></System><EventData><Data Name='SubjectUserSid'>S-1-5-18</Data><Data Name='SubjectUserName'>DESKTOP-MG37RGH$</Data><Data Name='SubjectDomainName'>WORKGROUP</Data><Data Name='SubjectLogonId'>0x3e7</Data><Data Name='TargetName'>WindowsLive:target=virtualapp/didlogical</Data><Data Name='Type'>0</Data><Data Name='CountOfCredentialsReturned'>0</Data><Data Name='ReadOperation'>%%8100</Data><Data Name='ReturnCode'>3221226021</Data><Data Name='ProcessCreationTime'>2023-09-12T03:31:26.2962325Z</Data><Data Name='ClientProcessId'>380</Data></EventData></Event>
-2023-09-30T18:04:27.843+0300	debug	connector 'Windows WMI Connector'	/opt/tfs-agent/_work/1/s/sdk/connectors/base.go:81	<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>2</Version><Level>0</Level><Task>12544</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated SystemTime='2023-09-30T15:04:25.8956546Z'/><EventRecordID>101556</EventRecordID><Correlation ActivityID='{9720f9d0-e529-0000-68fa-209729e5d901}'/><Execution ProcessID='652' ThreadID='524'/><Channel>Security</Channel><Computer>DESKTOP-MG37RGH</Computer><Security/></System><EventData><Data Name='SubjectUserSid'>S-1-5-18</Data><Data Name='SubjectUserName'>DESKTOP-MG37RGH$</Data><Data Name='SubjectDomainName'>WORKGROUP</Data><Data Name='SubjectLogonId'>0x3e7</Data><Data Name='TargetUserSid'>S-1-5-18</Data><Data Name='TargetUserName'>СИСТЕМА</Data><Data Name='TargetDomainName'>NT AUTHORITY</Data><Data Name='TargetLogonId'>0x3e7</Data><Data Name='LogonType'>5</Data><Data Name='LogonProcessName'>Advapi  </Data><Data Name='AuthenticationPackageName'>Negotiate</Data><Data Name='WorkstationName'>-</Data><Data Name='LogonGuid'>{00000000-0000-0000-0000-000000000000}</Data><Data Name='TransmittedServices'>-</Data><Data Name='LmPackageName'>-</Data><Data Name='KeyLength'>0</Data><Data Name='ProcessId'>0x26c</Data><Data Name='ProcessName'>C:\Windows\System32\services.exe</Data><Data Name='IpAddress'>-</Data><Data Name='IpPort'>-</Data><Data Name='ImpersonationLevel'>%%1833</Data><Data Name='RestrictedAdminMode'>-</Data><Data Name='TargetOutboundUserName'>-</Data><Data Name='TargetOutboundDomainName'>-</Data><Data Name='VirtualAccount'>%%1843</Data><Data Name='TargetLinkedLogonId'>0x0</Data><Data Name='ElevatedToken'>%%1842</Data></EventData></Event>
-2023-09-30T18:04:27.843+0300	debug	connector 'Windows WMI Connector'	/opt/tfs-agent/_work/1/s/sdk/connectors/base.go:81	<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4672</EventID><Version>0</Version><Level>0</Level><Task>12548</Task><Opcode>0</Opcode><Keywords>0x8020000000000000</Keywords><TimeCreated SystemTime='2023-09-30T15:04:25.8956755Z'/><EventRecordID>101557</EventRecordID><Correlation ActivityID='{9720f9d0-e529-0000-68fa-209729e5d901}'/><Execution ProcessID='652' ThreadID='524'/><Channel>Security</Channel><Computer>DESKTOP-MG37RGH</Computer><Security/></System><EventData><Data Name='SubjectUserSid'>S-1-5-18</Data><Data Name='SubjectUserName'>СИСТЕМА</Data><Data Name='SubjectDomainName'>NT AUTHORITY</Data><Data Name='SubjectLogonId'>0x3e7</Data><Data Name='PrivilegeList'>SeAssignPrimaryTokenPrivilege
-			SeTcbPrivilege
-			SeSecurityPrivilege
-			SeTakeOwnershipPrivilege
-			SeLoadDriverPrivilege
-			SeBackupPrivilege
-			SeRestorePrivilege
-			SeDebugPrivilege
-			SeAuditPrivilege
-			SeSystemEnvironmentPrivilege
-			SeImpersonatePrivilege
-			SeDelegateSessionUserImpersonatePrivilege</Data></EventData></Event>
+# README
 
+TheHiveHook_Go_Package является посредником между TheHive и NATS и применяется для передачи кейсов и алертов TheHive, через брокер сообщений NATS.
+
+## Конфигурационные настройки
+
+Конфигурационные параметры для сервиса могут быть заданы как через конфигурационный файл так и методом установки переменных окружения. Однако, все пароли и
+ключевые токены, используемые для авторизации, задаются ТОЛЬКО через переменные окружения.
+
+#### Типы конфигурационных файлов:
+
+- config.yaml общий конфигурационный файл;
+- config_dev.yaml конфигурационный файл используемый для тестов при разработке;
+- config_prod.yaml конфигурационный файл применяемый в продуктовом режиме.
+
+Основная переменная окружения для данного приложения - GO_HIVEHOOK_MAIN. На основании значения этой переменной принимается решение какой из конфигурационных файлов config_dev.yaml или config_prod.yaml использовать. При GO_HIVEHOOK_MAIN=development будет использоваться config_dev.yaml, во всех остальных случаях, в том числе и при отсутствии переменной окружения GO_HIVEHOOK_MAIN будет использоваться конфигурационный файл config_prod.yaml. Перечень переменных окружения которые можно использовать для настройки приложения:
+
+#### Переменная окружения отвечающая за тип запуска приложения "development" или "production"
+
+- GO_HIVEHOOK_MAIN
+
+#### Переменные окружения отвечающие за подключение к NATS
+
+- GO_HIVEHOOK_NPREFIX
+- GO_HIVEHOOK_NHOST
+- GO_HIVEHOOK_NPORT
+- GO_HIVEHOOK_NCACHETTL - данный параметр должен содержать время жизни записи
+  кэша, по истечение которого запись автоматически удаляется, значение задается
+  в секундах в диапазоне от 10 до 86400 секунд
+- GO_HIVEHOOK_NSUBSENDERCASE - канал для отправки в него информации по case
+- GO_HIVEHOOK_NSUBSENDERALERT - канал для отправки в него информации по alert
+- GO_HIVEHOOK_NSUBLISTENERCOMMAND - канал для приема команд которые нужно выполнить на TheHive
+
+#### Переменные окружения отвечающие за подключение к TheHive
+
+- GO_HIVEHOOK_THHOST
+- GO_HIVEHOOK_THPORT
+- GO_HIVEHOOK_THCACHETTL - данный параметр должен содержать время жизни записи
+  кэша, по истечение которого запись автоматически удаляется, значение задается
+  в секундах в диапазоне от 10 до 86400 секунд
+- GO_HIVEHOOK_THAPIKEY - ЭТО ОБЯЗАТЕЛЬНЫЙ ПАРАМЕТР!!!
+  Он задается ТОЛЬКО через переменную окружения. В конфигурационном
+  файле этого параметра нет.
+
+#### Переменные окружения отвечающие за настройки WebHook сервера
+
+- GO_HIVEHOOK_WEBHNAME //наименование сервера (gcm, rcmnvs и т.д.)
+- GO_HIVEHOOK_WEBHHOST
+- GO_HIVEHOOK_WEBHPORT
+- GO_HIVEHOOK_WEBHTTLTMPINFO //время жизни временной информации, в секундах от 10 до 86400
+
+#### Переменные окружения отвечающие за настройки доступа к БД в которую будут записыватся логи
+
+- GO_HIVEHOOK_DBWLOGHOST // доменное имя или ip БД
+- GO_HIVEHOOK_DBWLOGPORT // порт БД
+- GO_HIVEHOOK_DBWLOGNAME // наименование БД (при необходимости)
+- GO_HIVEHOOK_DBWLOGSTORAGENAME // наименование объекта хранения логов (таблица, документ, индекс и т.д. зависит от типа БД)
+- GO_HIVEHOOK_DBWLOGUSER // пользователь БД
+- GO_HIVEHOOK_DBWLOGPASSWD // пароль для доступа к БД
+
+Настройки логирования данных в БД не являются обязательными и необходимы только если пользователь приложения желает хранить логи в базе данных
+
+Приоритет значений заданных через переменные окружения выше чем значений полученных из конфигурационных файлов.
+
+## Примеры команд передаваемые TheHiveHook_Go_Package
+
+Все команды для TheHiveHook_Go_Package представляют собой JSON объекты передаваемые
+в бинарном виде. Структура и значение команд обрабатываемых TheHiveHook_Go_Package:
+
+```
+{
+  "service": "<наименование сервиса>" //обязательный параметр
+  "command": <команда>
+  "root_id": "<основной id, как правило это rootId case или alert>" //обязательный параметр только для некоторых действий выполняемых с конкретным кейсом или алертом
+  "case_id": "<id кейса, если есть>"
+  "username": <имя пользователя> //необходим если нужно указать пользователя выполнившего действие
+  "field_name": <некое ключевое поле>
+  "value": <устанавливаемое значение>
+  "byte_data": <набор данных в бинарном виде>
+}
+```
+
+##### Перечень видов обрабатываемых команд:
+
+- "add_case_tag"
+- "add_case_task"
+- "set_case_custom_field"
+
+Пример команды для добавления тега:
+
+```
+{
+  "service": "MISP",
+  "command": "add_case_tag",
+  "root_id": "~74395656",
+  "case_id": "13435",
+  "value": "Webhook: send=\"MISP\""
+}
+```
+
+Пример команды для добавления задачи:
+
+```
+{
+  "service": "MISP",
+  "command": "add_case_task",
+  "root_id": "~74395656",
+  "username": "architector@33c.rcm",
+  "field_name": "Developers",
+  "value": "handling request"
+}
+```
+
+Пример команды для добавления поля custom field:
+
+```
+{
+  "service": "MISP",
+  "command": "set_case_custom_field",
+  "root_id": "~74395656",
+  "field_name": "misp-event-id.string",
+  "value": "3221"
+}
+```
+
+##### Структура ответа на любую из переданных команд
+
+```
+{
+  id: "",
+  error: "",
+  command: "",
+  status_code: 0,
+  data: <дополнительные_данные_возможны_в_любом_типе>
+}
+```
+
+## Настройка 'endpoints' для TheHive
+
+Добавить в конфигурационный файл TheHive (thehive/conf/application.conf) в параметр
+notification.webhook.endpoints значение с новым 'endpoint', по аналогии.
+
+Далее, выполнить:
+
+```
+curl -XPUT -H "Authorization: Bearer <ApiKey>" -H 'Content-type: application/json' <url*или*ip*и*сетевой*порт>/api/config/organisation/notification -d
+  '{
+    "value": [
+      {
+        "delegate": false,
+        "trigger": {"name": "AnyEvent"},
+        "notifier": {"name": "webhook", "endpoint": "hivehook"}
+      }
+    ]
+  }'
+```
