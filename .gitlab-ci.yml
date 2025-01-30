@@ -7,10 +7,15 @@ default:
 
 build-job:
   stage: build
-  only:
-    refs:
+  rules:
+    - if: 
+      refs:
       - master
-      - latest
+      - latest        
+#  only:
+#    refs:
+#      - master
+#      - latest
 #  except:
 #    changes:
 #      - README.md
