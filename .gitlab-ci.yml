@@ -3,7 +3,9 @@ stages:
 
 default:
   tags:
-    - thehivehook_go  
+    - thehivehook_go
+  script:
+    - echo "URL repository $CI_REPOSITORY_URL"
 
 build-job:
   stage: build
