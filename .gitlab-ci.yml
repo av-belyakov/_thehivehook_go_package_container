@@ -1,6 +1,10 @@
 stages:
   - build
 
+before-script:
+  script:
+    - echo 'URL repository: ${CI_REPOSITORY_URL}'
+
 default:
   tags:
     - thehivehook_go
@@ -13,4 +17,6 @@ build-job:
       - latest
   script: 
     - pwd
+    - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
+    - docker rmi ${CI_REPOSITORY_URL}
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml up -d --force-recreate --build
