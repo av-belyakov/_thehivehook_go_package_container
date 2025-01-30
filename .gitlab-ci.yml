@@ -11,9 +11,9 @@ build-job:
     refs:
       - master
       - latest
-  except:
-    changes:
-      - README.md
+#  except:
+#    changes:
+#      - README.md
   before_script:
     - echo "Current URL repository - $CI_REPOSITORY_URL"
   script: 
