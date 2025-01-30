@@ -11,16 +11,9 @@ services:
     volumes:
       #- $PWD/logs:/opt/thehivehook_go_package/logs:rw
       - /var/log/thehivehook_go_package:/opt/thehivehook_go_package/logs:rw
-      #- $PWD/config:/opt/thehivehook_go_package/config:rw
       - ./config:/opt/thehivehook_go_package/config:rw
       #для корректного отображения даты с учетом временной зоны
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     network_mode: "host"
-    #ports:
-    #  - "15151:5151"
-
-#networks:
-#  hivehook:
-#    external: true
 
