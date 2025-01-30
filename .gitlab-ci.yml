@@ -4,8 +4,8 @@ stages:
 default:
   tags:
     - thehivehook_go
-  before_script:
-    - echo "URL repository: ${CI_REPOSITORY_URL}"  
+#  before_script:
+#    - echo "URL repository: ${CI_REPOSITORY_URL}"  
 
 build-job:
   stage: build
@@ -13,6 +13,8 @@ build-job:
     refs:
       - master
       - latest
+  before_script:
+    - echo "Execute this `before_script` in all jobs by default."
   script: 
     - pwd
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
