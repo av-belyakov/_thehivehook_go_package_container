@@ -4,6 +4,8 @@ stages:
 default:
   tags:
     - thehivehook_go
+  before_script:
+    - echo "URL repository: ${CI_REPOSITORY_URL}"  
 
 build-job:
   stage: build
@@ -11,8 +13,6 @@ build-job:
     refs:
       - master
       - latest
-  before_script:
-    - echo "URL repository: ${CI_REPOSITORY_URL}"
   script: 
     - pwd
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
