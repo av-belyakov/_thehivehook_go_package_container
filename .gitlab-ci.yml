@@ -12,15 +12,7 @@ build-job:
       changes:
         - README.md
       when: never
-#      refs:
-#      - master
-#      - latest        
-#  only:
-#    refs:
-#      - master
-#      - latest
-#  except:
-
+    - when: on_success
   before_script:
     - echo "Current URL repository - $CI_REPOSITORY_URL"
   script: 
