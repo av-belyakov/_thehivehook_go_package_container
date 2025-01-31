@@ -12,6 +12,7 @@ build-job:
       changes:
         - README.md
       when: never
+#    - if: $CI_COMMIT_BRANCH
     - when: on_success
   before_script:
     - echo "Current URL repository - $CI_REPOSITORY_URL"
