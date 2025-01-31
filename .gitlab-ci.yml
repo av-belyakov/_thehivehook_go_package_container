@@ -12,9 +12,9 @@ build-job:
       changes:
         - README.md
       when: never
-#    - if: $CI_COMMIT_BRANCH
-    - when: on_success
-      allow_failure: true
+    - if: $CI_COMMIT_REF_NAME == "master"
+      when: on_success
+#      allow_failure: true
   before_script:
     - echo "Current URL repository - $CI_REPOSITORY_URL"
   script: 
