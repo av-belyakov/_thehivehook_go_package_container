@@ -13,6 +13,7 @@ build-job:
     - if: $CI_COMMIT_BRANCH
       changes:
         - README.md
+        - docker-compose.yml
       when: never
     - when: on_success
   before_script:
