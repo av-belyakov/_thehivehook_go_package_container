@@ -22,5 +22,5 @@ build-job:
     - pwd
     - docker login -u $CI_REGISTRY_USER -p $CI_JOB_TOKEN $CI_REGISTRY
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml down 
-    - docker rmi gitlab.cloud.gcm:5050/a.belyakov/thehivehook_go_package || true
+    - docker rmi gitlab.cloud.gcm:5050/a.belyakov/thehivehook_go_package:test || true
     - docker-compose -f $CI_PROJECT_DIR/docker-compose.yml up -d --force-recreate --build
